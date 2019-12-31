@@ -1,0 +1,153 @@
+{
+    "platform": {
+        "uuid": "reactive-launcher-local-layouts2",
+        "applicationIcon": "http://localhost:3000/static/media/adaptive-mark-large.png",
+        "autoShow": false,
+        "defaultWindowOptions": {
+            "contextMenu": true
+        }
+    },
+    "snapshot": {
+        "windows": [
+            {
+                "defaultWidth": 1200,
+                "defaultHeight": 1000,
+                "layout": {
+                    "content": [
+                        {
+                            "type": "row",
+                            "content": [
+                                {
+                                    "type": "column",
+                                    "width": 75,
+                                    "content": [
+                                        {
+                                            "type": "row",
+                                            "height": 75,
+                                            "content": [
+                                                {
+                                                    "type": "column",
+                                                    "content": [
+                                                        {
+                                                            "type": "stack",
+                                                            "content": [
+                                                                {
+                                                                    "type": "component",
+                                                                    "componentName": "view",
+                                                                    "componentState": {
+                                                                        "name": "tileGBPJPY",
+                                                                        "url": "http://localhost:3000/spot/GBPJPY?tileView=Normal"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "stack",
+                                                            "content": [
+                                                                {
+                                                                    "type": "component",
+                                                                    "componentName": "view",
+                                                                    "componentState": {
+                                                                        "name": "tileEURUSD",
+                                                                        "url": "http://localhost:3000/spot/EURUSD?tileView=Normal"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "column",
+                                                    "content": [
+                                                        {
+                                                            "type": "stack",
+                                                            "content": [
+                                                                {
+                                                                    "type": "component",
+                                                                    "componentName": "view",
+                                                                    "componentState": {
+                                                                        "name": "tileUSDJPY",
+                                                                        "url": "http://localhost:3000/spot/USDJPY?tileView=Normal"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "stack",
+                                                            "content": [
+                                                                {
+                                                                    "type": "component",
+                                                                    "componentName": "view",
+                                                                    "componentState": {
+                                                                        "name": "tileEURAUD",
+                                                                        "url": "http://localhost:3000/spot/EURAUD?tileView=Normal"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "stack",
+                                            "height": 25,
+                                            "content": [
+                                                {
+                                                    "type": "component",
+                                                    "title": "Blotter",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "name": "blotter",
+                                                        "url": "http://localhost:3000/blotter"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "stack",
+                                    "width": 25,
+                                    "content": [
+                                        {
+                                            "type": "component",
+                                            "title": "Analytics",
+                                            "componentName": "view",
+                                            "componentState": {
+                                                "name": "analytics",
+                                                "url": "http://localhost:3000/analytics"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "runtime": {
+        "arguments": "--v=1 --inspect",
+        "version": "14.78.47.23"
+    },
+    "shortcut": {
+        "company": "Adaptive Consulting",
+        "icon": "http://localhost:3000/static/media/icon.ico",
+        "name": "Reactive Trader (LOCAL, LAYOUTS2)"
+    },
+    "startup_app": {
+        "uuid": "startup-uuid-afc-local2"
+    },
+    "services": [
+        {
+            "name": "fdc3",
+            "manifestUrl": "https://cdn.openfin.co/services/openfin/fdc3/0.2.0/app.json"
+        },
+        {
+            "name": "notifications",
+            "manifestUrl": "https://cdn.openfin.co/services/openfin/notifications/0.11.1/app.json"
+        }
+    ]
+}

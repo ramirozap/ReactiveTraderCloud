@@ -38,13 +38,27 @@ The most stable version of the application it always reflects the `master` branc
 
 ## Starting the GUI
 
-Clone the repo and install the necessary node modules:
+### Get the source and dependencies
+
+Clone the repo.
+
+Then install the necessary node modules:
 
 ```sh
-npm install  # Install Node modules listed in ./package.json
-npm start    # Compile and launches the webpack dev server. By default, the client connects to a demo environment.
+npm install
 ```
-You can then browse the app at [http://localhost:3000](http://localhost:3000)
+
+### Run the local server and launch local web UI
+
+In the client package, run the webpack dev server.
+By default, the client connects to a demo environment.
+
+```sh
+cd src/client
+npm start
+```
+
+The app should launch automatically at [http://localhost:3000](http://localhost:3000)
 
 
 ### Additional command line options
@@ -83,6 +97,16 @@ npm run build:dev-backend
 ```
 
 ## Openfin
+
+Starts the local UI using the Openfin CLI
+
+```sh
+npm run openfin
+```
+or, to easily open from any local experimental manifest
+```sh
+npx openfin -c public/config/openfin/local-layouts2.json -l
+```
 
 Starts the application in Openfin pointing to an enviroment
 
